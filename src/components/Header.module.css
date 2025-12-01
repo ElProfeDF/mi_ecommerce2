@@ -1,0 +1,267 @@
+/* Estilos modulares para el header */
+
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo img {
+    height: 45px;
+    width: auto;
+    display: block;
+}
+
+.navToggle {
+    display: none; 
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    z-index: 1001;
+}
+
+.navToggle:hover {
+    color: var(--color-info);
+    transform: scale(1.1);
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center; /* Alineación vertical */
+}
+
+/* Estilos de enlaces base */
+.navLink {
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-family: var(--font-title);
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+    display: flex; /* Para alinear íconos si los hubiera */
+    align-items: center;
+    gap: 5px;
+}
+
+.navLink:hover, .navLink.active {
+    color: var(--color-primary);
+    text-shadow: 0 0 1px rgba(13, 110, 253, 0.3);
+}
+
+.navLink.active::after {
+    content: '';
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-primary);
+    box-shadow: 0 -2px 5px rgba(13, 110, 253, 0.5);
+}
+
+/* --- ESTILOS DEL DROPDOWN (MENÚ DESPLEGABLE) --- */
+
+.dropdownContainer {
+    position: relative; /* Contexto para el dropdown absoluto */
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 220px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    padding: 15px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    border-top: 3px solid var(--color-primary);
+    z-index: 1100;
+}
+
+/* Estado visible del dropdown */
+.dropdownMenu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(15px); /* Pequeño desplazamiento hacia abajo */
+}
+
+/* Items dentro del dropdown */
+.dropdownItem {
+    display: block;
+    padding: 10px 20px;
+    color: var(--color-dark);
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    border-left: 3px solid transparent; /* Preparado para el hover */
+}
+
+.dropdownItem:hover {
+    background-color: #f8f9fa;
+    color: var(--color-primary);
+    border-left: 3px solid var(--color-primary);
+    padding-left: 25px; /* Desplazamiento visual */
+    
+    /* Efecto Neón en el texto */
+    text-shadow: 0 0 8px rgba(13, 110, 253, 0.4);
+}
+
+/* Flechita del dropdown */
+.dropdownIcon {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.dropdownContainer:hover .dropdownIcon {
+    transform: rotate(180deg);
+}
+
+/* --- ACCIONES DE USUARIO --- */
+
+.userActions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.carritoContainer {
+    color: var(--color-dark);
+    margin-left: 10px;
+    position: relative;
+    font-size: 1.2rem;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.carritoBadge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: var(--color-danger);
+    color: white;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(220, 53, 69, 0.4);
+}
+
+.desktopOnly {
+    display: inline;
+}
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 768px) {
+    .navToggle { display: block; order: 3; }
+    .userActions { order: 2; gap: 10px; }
+    .desktopOnly { display: none; }
+    
+    .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.65);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .nav.visible { max-height: 550px; /* Aumentado para acomodar el dropdown abierto */ }
+
+    .nav ul {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 20px;
+        text-align: center;
+        align-items: stretch; /* Ocupar todo el ancho */
+    }
+
+    .navLink.active::after { display: none; }
+    
+    .navLink {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--color-dark);
+        display: block;
+        justify-content: center; /* Centrar contenido flex */
+    }
+
+    .navLink:hover, .navLink.active {
+        color: var(--color-primary);
+        text-shadow: 0 0 10px rgba(13, 110, 253, 0.8), 0 0 20px rgba(13, 110, 253, 0.4);
+        transform: scale(1.05); 
+    }
+
+    /* Adaptación del dropdown en móvil */
+    .dropdownMenu {
+        position: static; 
+        box-shadow: none;
+        border: none;
+        background-color: transparent;
+        padding: 10px 0;
+        display: none; /* Oculto por defecto */
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        min-width: 100%;
+    }
+
+    .dropdownMenu.show {
+        display: block;
+        animation: fadeIn 0.3s ease;
+    }
+
+    .dropdownItem {
+        padding: 12px;
+        text-align: center;
+        border-left: none; /* Sin borde lateral en móvil */
+        font-size: 1.1rem;
+        color: #555;
+    }
+
+    .dropdownItem:hover {
+        background-color: rgba(13, 110, 253, 0.1);
+        padding-left: 12px; /* Sin desplazamiento */
+        color: var(--color-primary);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
