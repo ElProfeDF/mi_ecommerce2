@@ -1,0 +1,202 @@
+[
+  {
+    "id": "IA-01",
+    "nombre": "Inteligencia Artificial para Docentes",
+    "descripcion": "Domina ChatGPT y herramientas generativas para revolucionar tu planificación y evaluaciones.",
+    "duracion": "5 Semanas",
+    "clases": 10,
+    "precio": 25000,
+    "fecha": "2025-03-01",
+    "categoria": "Inteligencia Artificial"
+  },
+  {
+    "id": "PROG-01",
+    "nombre": "Pensamiento Computacional con Python",
+    "descripcion": "Introducción a la programación textual. Aprende la lógica detrás del código más usado del mundo.",
+    "duracion": "8 Semanas",
+    "clases": 16,
+    "precio": 32000,
+    "fecha": "2025-02-15",
+    "categoria": "Programación"
+  },
+  {
+    "id": "ROB-01",
+    "nombre": "Robótica Educativa con Arduino",
+    "descripcion": "Construye y programa tus propios robots. Integra electrónica y mecánica en el aula.",
+    "duracion": "6 Semanas",
+    "clases": 12,
+    "precio": 28000,
+    "fecha": "2025-02-01",
+    "categoria": "Robótica"
+  },
+  {
+    "id": "TECEDU-01",
+    "nombre": "Introducción a la Tecnología Educativa",
+    "descripcion": "Explora los conceptos fundamentales, teorías y herramientas básicas del campo.",
+    "duracion": "4 Semanas",
+    "clases": 8,
+    "precio": 15000,
+    "fecha": "2025-01-20",
+    "categoria": "Ciudadanía Digital"
+  },
+  {
+    "id": "PROG-02",
+    "nombre": "Desarrollo Web Frontend con React",
+    "descripcion": "Crea interfaces modernas y dinámicas. Domina HTML, CSS y el framework más popular.",
+    "duracion": "10 Semanas",
+    "clases": 20,
+    "precio": 45000,
+    "fecha": "2025-03-10",
+    "categoria": "Programación"
+  },
+  {
+    "id": "IA-02",
+    "nombre": "Prompt Engineering Avanzado",
+    "descripcion": "Aprende a comunicarte efectivamente con las IAs para obtener resultados precisos y complejos.",
+    "duracion": "4 Semanas",
+    "clases": 8,
+    "precio": 20000,
+    "fecha": "2025-02-28",
+    "categoria": "Inteligencia Artificial"
+  },
+  {
+    "id": "ROB-02",
+    "nombre": "Impresión 3D y Modelado",
+    "descripcion": "Del bit al átomo. Diseña piezas en 3D y aprende a materializarlas en el aula.",
+    "duracion": "6 Semanas",
+    "clases": 12,
+    "precio": 30000,
+    "fecha": "2025-01-15",
+    "categoria": "Robótica"
+  },
+  {
+    "id": "CIU-01",
+    "nombre": "Seguridad y Privacidad Digital",
+    "descripcion": "Protege tu identidad y datos. Conceptos clave de ciberseguridad para educadores.",
+    "duracion": "3 Semanas",
+    "clases": 6,
+    "precio": 12000,
+    "fecha": "2025-02-05",
+    "categoria": "Ciudadanía Digital"
+  },
+  {
+    "id": "PROG-03",
+    "nombre": "Java para Backend",
+    "descripcion": "Construye la lógica del servidor. Fundamentos de programación orientada a objetos.",
+    "duracion": "12 Semanas",
+    "clases": 24,
+    "precio": 50000,
+    "fecha": "2025-03-20",
+    "categoria": "Programación"
+  },
+  {
+    "id": "IA-03",
+    "nombre": "Generación de Imágenes con IA",
+    "descripcion": "Midjourney, DALL-E y Stable Diffusion. Crea recursos visuales impactantes.",
+    "duracion": "4 Semanas",
+    "clases": 8,
+    "precio": 22000,
+    "fecha": "2025-02-10",
+    "categoria": "Inteligencia Artificial"
+  },
+  {
+    "id": "ROB-03",
+    "nombre": "Internet de las Cosas (IoT)",
+    "descripcion": "Conecta tus objetos a la red. Domótica básica y sensores inteligentes.",
+    "duracion": "8 Semanas",
+    "clases": 16,
+    "precio": 35000,
+    "fecha": "2025-03-05",
+    "categoria": "Robótica"
+  },
+  {
+    "id": "CIU-02",
+    "nombre": "Prevención del Ciberbullying",
+    "descripcion": "Estrategias para detectar y prevenir el acoso en entornos digitales escolares.",
+    "duracion": "4 Semanas",
+    "clases": 8,
+    "precio": 16000,
+    "fecha": "2025-01-25",
+    "categoria": "Ciudadanía Digital"
+  },
+  {
+    "id": "PROG-04",
+    "nombre": "Base de Datos SQL",
+    "descripcion": "Aprende a estructurar, guardar y consultar información de manera eficiente.",
+    "duracion": "6 Semanas",
+    "clases": 12,
+    "precio": 28000,
+    "fecha": "2025-02-20",
+    "categoria": "Programación"
+  },
+  {
+    "id": "IA-04",
+    "nombre": "Ética en la Inteligencia Artificial",
+    "descripcion": "Debates necesarios sobre sesgos, derechos de autor y el futuro del trabajo.",
+    "duracion": "3 Semanas",
+    "clases": 6,
+    "precio": 14000,
+    "fecha": "2025-01-30",
+    "categoria": "Inteligencia Artificial"
+  },
+  {
+    "id": "ROB-04",
+    "nombre": "Programación de Drones",
+    "descripcion": "Vuela alto. Aprende la física y programación detrás de los vehículos aéreos no tripulados.",
+    "duracion": "5 Semanas",
+    "clases": 10,
+    "precio": 38000,
+    "fecha": "2025-03-15",
+    "categoria": "Robótica"
+  },
+  {
+    "id": "CIU-03",
+    "nombre": "Huella Digital y Reputación Online",
+    "descripcion": "Gestiona tu presencia en la red y enseña a tus alumnos a cuidar su imagen digital.",
+    "duracion": "3 Semanas",
+    "clases": 6,
+    "precio": 13000,
+    "fecha": "2025-02-12",
+    "categoria": "Ciudadanía Digital"
+  },
+  {
+    "id": "PROG-05",
+    "nombre": "Desarrollo de Videojuegos con Unity",
+    "descripcion": "Crea tus propios mundos interactivos. Introducción a C# y motor Unity.",
+    "duracion": "10 Semanas",
+    "clases": 20,
+    "precio": 48000,
+    "fecha": "2025-03-25",
+    "categoria": "Programación"
+  },
+  {
+    "id": "IA-05",
+    "nombre": "Machine Learning Básico",
+    "descripcion": "Entiende cómo aprenden las máquinas. Conceptos de redes neuronales sin matemática compleja.",
+    "duracion": "8 Semanas",
+    "clases": 16,
+    "precio": 36000,
+    "fecha": "2025-03-08",
+    "categoria": "Inteligencia Artificial"
+  },
+  {
+    "id": "ROB-05",
+    "nombre": "Electrónica Básica para Makers",
+    "descripcion": "Soldadura, circuitos y componentes. La base hardware para cualquier proyecto maker.",
+    "duracion": "5 Semanas",
+    "clases": 10,
+    "precio": 24000,
+    "fecha": "2025-02-08",
+    "categoria": "Robótica"
+  },
+  {
+    "id": "CIU-04",
+    "nombre": "Bienestar Digital",
+    "descripcion": "Equilibrio entre la vida online y offline. Herramientas para la desconexión saludable.",
+    "duracion": "3 Semanas",
+    "clases": 6,
+    "precio": 12000,
+    "fecha": "2025-01-18",
+    "categoria": "Ciudadanía Digital"
+  }
+]
